@@ -8,6 +8,7 @@ export const style = StyleSheet.create({
         justifyContent:"center",
         alignItems:"center",
         flexDirection:"row",
+        
         // backgroundColor:"#310075"
     },
 

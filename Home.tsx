@@ -2,85 +2,112 @@ import { Image, ScrollView, TouchableOpacity, Text, View } from "react-native";
 import { Ionicons } from '@expo/vector-icons';
 import {style} from  './Style';
 
+
 export default function Home({navigation}){
     return(
         <View style={{flex:1}}>
               <View style={style.header}>
-                    <Ionicons name="md-logo-reddit" size={50} color="#310075" style={{padding:10}} />
-                    <Text style={{color:"black",fontSize:55}}>
-                     Senac
-                    </Text>
+              <Image source={"./assets/senaclogo.png"}/>
             </View>
+
+                                    {/* inserir imagem do logo */}
+
             <View style={{flex:4}}>
-                <Text style={{fontSize:20,padding:10,paddingLeft:30, paddingTop:50,fontWeight:"bold"}}>
-                    Confira Nossos Cursos
+                <Text style={{fontSize:20,padding:10,paddingLeft:30, paddingTop:50,fontWeight:"bold",textAlign:"center"}}>
+                    Escolha a sua área
                 </Text> 
-                <ScrollView horizontal={true} style={{padding:20}}>
-                    {/* Primeiro curso Administração */}
+
+                {/* quasro cursos */}
+
+                <View style={{flexDirection:"row"}}>
+               
+                    {/*  Administração */}
                     <View style={{padding:10}}>
-                        <Image style={{height:400, width:350, borderRadius:30}} source={{uri:("https://www.undb.edu.br/hubfs/administra%C3%A7%C3%A3o%20undb-1.jpg")}}/>
+                        <Image style={{height:100, width:150, borderRadius:10}} source={{uri:("https://2.bp.blogspot.com/-HZOfradL9dU/U1Bx6YlFXSI/AAAAAAAA0M0/zORj--oKahs/s1600/administrac%CC%A7a%CC%83o.jpg")}}/>
                         <View style={{flexDirection:"row"}}>
-                            <Text style={{padding:10,fontSize:18}}> Administação</Text>
+                            <Text style={{padding:10,fontSize:18,textAlign:"center"}}> Administação</Text>
                             <TouchableOpacity onPress={()=>navigation.navigate("Administracao")} style={{
                                 margin:5,
                                 justifyContent:"center",
-                                alignItems:"center",
-                                paddingLeft:110,
+                                alignItems:"center"
+                                
                                 }}>
-                                    <Text style={{color:"white",fontSize:15, backgroundColor:"#599eff",borderRadius:10,height:23,width:80,textAlign:"center"}}>Saiba mais</Text>
+                                    
                             </TouchableOpacity>
                         </View>
                     </View>
 
-                    {/* Segundo curso Informática */}
-                    <View style={{padding:10}}>
-                        <Image style={{height:400, width:350, borderRadius:30}} source={{uri:("https://colegiopioxii.com.br/wp-content/uploads/2018/05/informatica.jpg")}}/>
-                        <View style={{flexDirection:"row"}}>
-                            <Text style={{padding:10,fontSize:18}}>Informática</Text>
-                            <TouchableOpacity onPress={()=>navigation.navigate("Produto")} style={{
-                                margin:5,
-                                justifyContent:"center",
-                                alignItems:"center",
-                                paddingLeft:130,
-                                }}>
-                                    <Text style={{color:"white",fontSize:15, backgroundColor:"#599eff",borderRadius:10,height:23,width:80,textAlign:"center"}}>Saiba mais</Text>
-                            </TouchableOpacity>
-                        </View>
-                    </View>
+                    
 
-                    {/* Terceiro curso Fotografia */}
-                    <View style={{padding:10}}>
-                        <Image style={{height:400, width:350, borderRadius:30}} source={{uri:("https://guiadoestudante.abril.com.br/wp-content/uploads/sites/4/2020/05/nota-docs-fotografia.jpg")}}/>
-                        <View style={{flexDirection:"row"}}>
-                            <Text style={{padding:10,fontSize:18}}>Fotografia</Text>
-                            <TouchableOpacity onPress={()=>navigation.navigate("Produto")} style={{
-                                margin:5,
-                                justifyContent:"center",
-                                alignItems:"center",
-                                paddingLeft:130,
-                                }}>
-                                    <Text style={{color:"white",fontSize:15, backgroundColor:"#599eff",borderRadius:10,height:23,width:80,textAlign:"center"}}>Saiba mais</Text>
-                            </TouchableOpacity>
-                        </View>
-                    </View>
-
-                    {/* Quarto curso Bem-Estar */}
+                    {/* Bem-Estar */}
                     <View style={{padding:10,paddingRight:40}}>
-                        <Image style={{height:400, width:350, borderRadius:30}} source={{uri:("https://dinheirama.com/wp-content/uploads/2017/01/BEM-ESTAR.jpg")}}/>
+                        <Image style={{height:100, width:150, borderRadius:10}} source={{uri:("https://www.fitneass.com/wp-content/uploads/2019/06/How-To-Achieve-A-Fit-And-Healthy-Body.jpg")}}/>
                         <View style={{flexDirection:"row"}}>
-                            <Text style={{padding:10,fontSize:18}}>Bem-Estar</Text>
+                            <Text style={{padding:10,fontSize:18,textAlign:"center"}}>Bem-Estar</Text>
                             <TouchableOpacity onPress={()=>navigation.navigate("Produto")} style={{
                                 margin:5,
                                 justifyContent:"center",
                                 alignItems:"center",
-                                paddingLeft:130,
+                                
                                 }}>
-                                    <Text style={{color:"white",fontSize:15, backgroundColor:"#599eff",borderRadius:10,height:23,width:80,textAlign:"center"}}>Saiba mais</Text>
+                                    
                             </TouchableOpacity>
                         </View>
                     </View>
-                </ScrollView>
-            </View>
+                
+              </View>
+
+
+
+              {/* coluna de imagem 2 */}
+
+
+
+
+                <View style={{flexDirection:"row"}}>
+               
+                    {/* Tecnologia */}
+                    <View style={{padding:10}}>
+                        <Image style={{height:100, width:150, borderRadius:10}} source={{uri:("https://piauihoje.com/uploads/imagens/tecno-divulgacao-1654806461.jpeg")}}/>
+                        <View style={{flexDirection:"row"}}>
+                            <Text style={{padding:10,fontSize:18,textAlign:"center"}}> Tecnologia</Text>
+                            <TouchableOpacity onPress={()=>navigation.navigate("Administracao")} style={{
+                                margin:5,
+                                justifyContent:"center",
+                                alignItems:"center"
+                                
+                                }}>
+                                    
+                            </TouchableOpacity>
+                        </View>
+                    </View>
+
+                    
+
+                    {/* Fotografia */}
+                    <View style={{padding:10,paddingRight:40}}>
+                        <Image style={{height:100, width:150, borderRadius:10}} source={{uri:("https://i.redd.it/oa77nu73vv371.jpg")}}/>
+                        <View style={{flexDirection:"row"}}>
+                            <Text style={{padding:10,fontSize:18,textAlign:"center"}}>Fotografia</Text>
+                            <TouchableOpacity onPress={()=>navigation.navigate("Produto")} style={{
+                                margin:5,
+                                justifyContent:"center",
+                                alignItems:"center",
+                                
+                                }}>
+                                    
+                            </TouchableOpacity>
+                        </View>
+                    </View>
+                
+              </View>
+
+
+
+
+
+
+           </View>
         </View>
     )
 }
