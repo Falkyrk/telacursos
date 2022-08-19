@@ -1,36 +1,29 @@
 import { Text, View } from "react-native";
 
-export default function Administracao(){
+export default function Tecnologia(){
     return(
-
-
-        
-
-
-
-        
         <View style={{flex:1,justifyContent:"center", alignItems:"center"}}>
 <View>
   <Text style={{fontSize:15, color:"black"}}>
-    Administração e planejamento de negócios
+    AutoCAD - projetos em 2D
   </Text>
 </View>
 
 <View>
   <Text style={{fontSize:15, color:"black"}}>
-    Assistente Administrativo
+    Excel 2019 - avançado
   </Text>
 </View>
 
 <View>
   <Text style={{fontSize:15, color:"black"}}>
-    Assistente de Pessoal
+    Lógica de Programação
   </Text>
 </View>
 
 <View>
   <Text style={{fontSize:15, color:"black"}}>
-    Assistente de recursos humanos
+    Técnico em Informática
   </Text>
 </View>
 

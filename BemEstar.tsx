@@ -1,36 +1,29 @@
 import { Text, View } from "react-native";
 
-export default function Administracao(){
+export default function BemEstar(){
     return(
-
-
-        
-
-
-
-        
         <View style={{flex:1,justifyContent:"center", alignItems:"center"}}>
 <View>
   <Text style={{fontSize:15, color:"black"}}>
-    Administração e planejamento de negócios
+    Drenagem Linfática manual
   </Text>
 </View>
 
 <View>
   <Text style={{fontSize:15, color:"black"}}>
-    Assistente Administrativo
+    Práticas Meditativas
   </Text>
 </View>
 
 <View>
   <Text style={{fontSize:15, color:"black"}}>
-    Assistente de Pessoal
+    Técnicas de Depilação
   </Text>
 </View>
 
 <View>
   <Text style={{fontSize:15, color:"black"}}>
-    Assistente de recursos humanos
+    Técnicas de manicure e pedicure
   </Text>
 </View>
 
